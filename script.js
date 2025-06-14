@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //   Username Validation
   const userNameVal = document.getElementById("username").value.trim();
-  if (userNameVal.length < 3) {
+  if (username.length < 3) {
     isValid = false;
     messages.push("Username must be at least 3 characters long");
   }
