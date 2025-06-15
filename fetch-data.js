@@ -1,5 +1,6 @@
 // Initialize the Async function
 async function fetchUserData() {
+  // Define API Url
   const apiUrl = "https://jsonplaceholder.typicode.com/users";
 
   //   Selecting the data container element
@@ -7,7 +8,7 @@ async function fetchUserData() {
 
   // Fetching data using try-catch block
   try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const response = await fetch(apiUrl);
     const users = await response.json();
 
     // Clear loading user data
